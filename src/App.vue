@@ -1,11 +1,10 @@
 <template>
   <div id="nav">
-  <!-- <router-view v-slot="{ Component }">
+  <router-view v-slot="{ Component }">
   <transition name="fade" appear mode="out-in">
     <component :is="Component" />
   </transition>
-  </router-view> -->
-  <router-view></router-view>
+  </router-view>
   </div>
 </template>
 
@@ -15,6 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  background-image: url('./assets/space-travel.png');
+  height: 100vh;
 }
 
 .fade-enter-active{

@@ -1,61 +1,29 @@
 <template>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="../assets/logo.png" width="112" height="28">
-        </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        <router-link to="/" class="navbar-item">
+          <img src="../assets/logo.png" width="50" height="50">
+        </router-link>
       </div>
-    
+      <div class="navbar-start">
+        <div class="navbar-item">
+          Space travel
+        </div>
+      </div>
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">
+          <router-link to="/" class="navbar-item">
             Home
-          </a>
-    
+          </router-link>
           <router-link to="/about" class="navbar-item">
             About
           </router-link>
-  
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
-              </a>
-              <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
-            </div>
-          </div>
+          <router-link to="/about" class="navbar-item">
+            Contact
+          </router-link>
+          <router-link to="/about" class="navbar-item">
+            Support 
+          </router-link>
         </div>
       </div>
     </nav>
@@ -67,6 +35,17 @@ import { Vue } from "vue-class-component";
 export default class NavBar extends Vue {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  .navbar{
+    background-color: transparent !important;
 
+    .navbar-item{
+      color: white;
+    }
+
+    a.navbar-item:hover{
+      border-bottom: 1px solid rgb(45, 28, 61);
+      background-color: rgba(57, 39, 70, 0.199);
+    }
+  }
 </style>
