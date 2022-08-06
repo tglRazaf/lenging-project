@@ -15,7 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-image: url('./assets/space-travel.png');
-  height: 100vh;
 }
 
 .fade-enter-active{
